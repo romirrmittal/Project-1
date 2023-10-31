@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <img class="logo-button" src="images/RM_Logo_Libre_128.png" width="150px">
+        <nav>
+            <a href="index.html" class="nav-button">HOME</a>&nbsp;&nbsp;
+            <a href="projects.html" class="nav-button">WORK</a>&nbsp;&nbsp;
+            <a href="about.html" class="nav-button">ABOUT</a>&nbsp;&nbsp;
+            <a href="#contact" class="nav-button">LINKS</a>
+        </nav>
+    </header>
+
+    <div class="about-hero">
+        <img class="headshot" src="images/Romir_Art.png" alt="Romir-Face" width="300px">
+        <div class="about-main-text">
+            <h1 class="about-name">Romir</h1>
+            <h2>/row-meer/</h2>
+            <h3>Aspiring Product Manager with a focus on </h3>
+        </div>
+    </div>
+    <div class="faq-container">
+        <h2>FAQs</h2>
+        <div class="faq-item">
+            <div class="faq-item-header">
+                <h3 class="question">Q1. What is Lorem Ipsum?</h3>
+                <div class="question-arrow">&#x25B8;</div> <!-- Right-pointing triangle arrow -->
+            </div>
+            <div class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-item-header">
+                <h3 class="question">Q2. Why do we use it?</h3>
+                <div class="question-arrow">&#x25B8;</div>
+            </div>
+            <div class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-item-header">
+                <h3 class="question">Q3. Another question?</h3>
+                <div class="question-arrow">&#x25B8;</div>
+            </div>
+            <div class="answer">This is another example answer.</div>
+        </div>
+        <!-- Add more FAQ items as needed -->
+    </div>
+
+    <script>
+        const headers = document.querySelectorAll('.faq-item-header');
+
+        headers.forEach((header) => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const answer = item.querySelector('.answer');
+                const arrow = header.querySelector('.question-arrow');
+
+                if (item.classList.contains('open')) {
+                    item.classList.remove('open');
+                    arrow.innerHTML = '&#x25B8;'; // Right-pointing triangle arrow
+                } else {
+                    item.classList.add('open');
+                    arrow.innerHTML = '&#x25BE;'; // Down-pointing triangle arrow
+                }
+            });
+        });
+    </script>
+    <hr class="style-eight">
+    <footer>
+        <div>
+            <div>
+               <h5> © 2023 RM </h5> 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

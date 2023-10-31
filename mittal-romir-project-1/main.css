@@ -1,0 +1,202 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(241, 237, 219);
+
+}
+header {
+    text-align: center;
+}
+
+nav {
+    margin: 8px 0 40px 0;
+    position: static;
+}
+a {
+    color: #7e7e7e;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 4px;
+}
+.home-lower {
+    padding-top: 80px;
+    font-weight: 100;
+}
+
+.nav-button:hover {
+    color: black;
+}
+
+.nav-button:active {
+    color: black;
+}
+
+.logo-button {
+    max-width: 300px;
+    padding-top: 14px;
+}
+
+.center {
+    display: block;
+}
+
+.home {
+    text-align: center;
+    margin: 8px;
+}
+
+.hi {
+    padding: 40px 0px 40px 0px;
+}
+
+.home-background {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 18em;
+    font-weight: 800;
+    margin: auto;
+    text-align: center;
+    text-shadow: #333;
+}
+
+
+details {
+    font-size: 1.5em;
+    margin: 16px;
+    border-top: 1px #333;
+    border-bottom: 1px #333;
+}
+
+.drop {
+    font-size: 16px;
+    text-align: left;
+    margin: 24px
+}
+
+hr.style-eight {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    margin-top: 14.5em;
+    margin-bottom: 0;
+}
+hr.style-eight:after {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    margin-bottom: 0;
+}
+
+footer {
+    height: 75px;
+    padding: 25px;
+}
+
+.footer-left {
+    float: left;
+    margin-left: 16px;
+}
+
+.socials {
+    float: right;
+    margin-right: 16px;
+}
+
+.icon {
+    width: 50px;
+    display: inline-block
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    width: auto;
+}
+
+.items img{
+    height: auto;
+}
+
+.items-cover {
+    text-align: center;
+    margin: 0 4px 4px 4px;
+}
+
+.about-hero {
+    background-color: ivory;
+    color: black;    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 24px;
+}
+
+.headshot {
+    height: auto;
+    max-width: 100%;
+    float: left;
+}
+
+.about-main-text {
+    text-align: left;
+    font-weight: bold;
+    padding: 20px;
+}
+
+
+.faq-container {
+    max-width: 1000px;
+    margin: 24px auto;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    position: relative;
+    transition: border-color 0.6s;
+}
+
+.faq-item:first-child {
+    border-top: none;
+}
+
+.faq-item:last-child {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.faq-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.question-arrow {
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.answer {
+    display: none;
+    border-top: none;
+    border-bottom: none;
+    margin: 10px;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s;
+    text-align: left;
+}
+
+.faq-item.open .answer {
+    display: block;
+}
