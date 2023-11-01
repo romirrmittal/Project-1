@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: rgb(241, 237, 219);
+    background-color: ivory;
 
 }
 header {
@@ -12,7 +12,7 @@ nav {
     position: static;
 }
 a {
-    color: #7e7e7e;
+    color: #7d7d7d;
     text-align: center;
     font-size: 12px;
     text-decoration: none;
@@ -31,6 +31,10 @@ a {
     color: black;
 }
 
+.active {
+    color: black
+}
+
 .logo-button {
     max-width: 300px;
     padding-top: 14px;
@@ -41,6 +45,8 @@ a {
 }
 
 .home {
+    
+    border-radius: 24px;
     text-align: center;
     margin: 8px;
 }
@@ -56,40 +62,7 @@ a {
     margin: auto;
     text-align: center;
     text-shadow: #333;
-}
-
-
-details {
-    font-size: 1.5em;
-    margin: 16px;
-    border-top: 1px #333;
-    border-bottom: 1px #333;
-}
-
-.drop {
-    font-size: 16px;
-    text-align: left;
-    margin: 24px
-}
-
-hr.style-eight {
-    overflow: visible;
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
-    margin-top: 14.5em;
-    margin-bottom: 0;
-}
-hr.style-eight:after {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    margin-bottom: 0;
+    margin-bottom: 220px;
 }
 
 footer {
@@ -112,28 +85,91 @@ footer {
     display: inline-block
 }
 
+.projects-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .items {
+    background-color: #6A726B;
+    border-radius: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2em;
+    margin: auto;
     flex-wrap: wrap;
-    border: 1px solid red;
-    width: auto;
-}
-
-.items img{
-    height: auto;
+    max-width: 1250px;
+    padding: 40px;
+    margin-bottom: 120px;
 }
 
 .items-cover {
     text-align: center;
-    margin: 0 4px 4px 4px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.items-cover:hover .overlay {
+    display: block;
+    text-align: center;
+}
+
+.back-button {
+    font-family: 'Inter';
+    border-radius: 16px;
+    border: 1px solid #6A726B;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 20px;
+    position: absolute;
+    margin-left: 80px;
+  }
+
+.back-button:hover {
+    background-color: #6A726B;
+    color: ivory;
+  }
+
+.details {
+    text-align: center;
+    margin: 20px;
+    flex: wrap;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.skills-section {
+    margin: 50px 0 50px 0;
+}
+
+
+.skills {
+    border: 1px solid black;
+    color: black;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 4px 10px 4px 10px;
 }
 
 .about-hero {
-    background-color: ivory;
-    color: black;    
+    background-color: #6A726B;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    color: white;    
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -152,10 +188,13 @@ footer {
     padding: 20px;
 }
 
+.about-name {
+    font-weight: bold;
+}
 
 .faq-container {
     max-width: 1000px;
-    margin: 24px auto;
+    margin: 100px auto;
     text-align: center;
 }
 
@@ -188,6 +227,10 @@ footer {
     transition: transform 0.3s;
 }
 
+.question {
+    font-weight: bold;
+}
+
 .answer {
     display: none;
     border-top: none;
@@ -199,4 +242,47 @@ footer {
 
 .faq-item.open .answer {
     display: block;
+}
+
+form {
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    max-width: 400px;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.input-group {
+    width: 100%;
+}
+
+textarea {
+    width: 300px;
+}
+
+.input-group input, .input-group textarea {
+    margin: 15px auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.form-button button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-button button:hover {
+    background-color: #0056b3;
 }
